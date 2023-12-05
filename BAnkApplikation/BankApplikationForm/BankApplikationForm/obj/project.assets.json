@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Hanan\\Desktop\\BAnkApplikation\\BankApplikationForm\\BankApplikationForm\\BankApplikationForm.csproj",
+      "projectUniqueName": "C:\\Users\\Hanan\\Desktop\\Bank-Applikation\\BAnkApplikation\\BankApplikationForm\\BankApplikationForm\\BankApplikationForm.csproj",
       "projectName": "BankApplikationForm",
-      "projectPath": "C:\\Users\\Hanan\\Desktop\\BAnkApplikation\\BankApplikationForm\\BankApplikationForm\\BankApplikationForm.csproj",
+      "projectPath": "C:\\Users\\Hanan\\Desktop\\Bank-Applikation\\BAnkApplikation\\BankApplikationForm\\BankApplikationForm\\BankApplikationForm.csproj",
       "packagesPath": "C:\\Users\\Hanan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Hanan\\Desktop\\BAnkApplikation\\BankApplikationForm\\BankApplikationForm\\obj\\",
+      "outputPath": "C:\\Users\\Hanan\\Desktop\\Bank-Applikation\\BAnkApplikation\\BankApplikationForm\\BankApplikationForm\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Hanan\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -94,12 +94,14 @@
             // 
             // comboBox1
             // 
+            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox1.FormattingEnabled = true;
             comboBox1.Items.AddRange(new object[] { "Admin", "User" });
             comboBox1.Location = new Point(509, 369);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(129, 33);
             comboBox1.TabIndex = 6;
+            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // label3
             // 

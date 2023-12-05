@@ -8,13 +8,13 @@ namespace BankApplikation
 {
     internal class Admin
     {
-        public string Adminname { get; private set; }
+        public string AdminName { get; private set; }
         private string Password;
         private List<User> UserList;
 
         public Admin(string adminname, string password)
         {
-            Adminname = adminname;
+            AdminName = adminname;
             Password = password;
             UserList = new List<User>();
 

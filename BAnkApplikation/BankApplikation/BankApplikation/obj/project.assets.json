@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Hanan\\Desktop\\BAnkApplikation\\BankApplikation\\BankApplikation\\BankApplikation.csproj",
+      "projectUniqueName": "C:\\Users\\Hanan\\Desktop\\Bank-Applikation\\BAnkApplikation\\BankApplikation\\BankApplikation\\BankApplikation.csproj",
       "projectName": "BankApplikation",
-      "projectPath": "C:\\Users\\Hanan\\Desktop\\BAnkApplikation\\BankApplikation\\BankApplikation\\BankApplikation.csproj",
+      "projectPath": "C:\\Users\\Hanan\\Desktop\\Bank-Applikation\\BAnkApplikation\\BankApplikation\\BankApplikation\\BankApplikation.csproj",
       "packagesPath": "C:\\Users\\Hanan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Hanan\\Desktop\\BAnkApplikation\\BankApplikation\\BankApplikation\\obj\\",
+      "outputPath": "C:\\Users\\Hanan\\Desktop\\Bank-Applikation\\BAnkApplikation\\BankApplikation\\BankApplikation\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Hanan\\AppData\\Roaming\\NuGet\\NuGet.Config",

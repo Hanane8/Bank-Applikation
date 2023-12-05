@@ -32,16 +32,13 @@
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
-            label5 = new Label();
-            label6 = new Label();
             label7 = new Label();
             textBox1 = new TextBox();
             textBox2 = new TextBox();
             textBox3 = new TextBox();
             textBox4 = new TextBox();
-            textBox5 = new TextBox();
-            textBox6 = new TextBox();
             comboBox1 = new ComboBox();
+            button1 = new Button();
             SuspendLayout();
             // 
             // label1
@@ -51,7 +48,7 @@
             label1.Name = "label1";
             label1.Size = new Size(65, 25);
             label1.TabIndex = 0;
-            label1.Text = "Email :";
+            label1.Text = "Name:";
             // 
             // label2
             // 
@@ -67,45 +64,28 @@
             label3.AutoSize = true;
             label3.Location = new Point(120, 148);
             label3.Name = "label3";
-            label3.Size = new Size(61, 25);
+            label3.Size = new Size(79, 25);
             label3.TabIndex = 2;
-            label3.Text = "Name";
+            label3.Text = "Address";
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Location = new Point(120, 204);
             label4.Name = "label4";
-            label4.Size = new Size(68, 25);
+            label4.Size = new Size(56, 25);
             label4.TabIndex = 3;
-            label4.Text = "Adress";
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(120, 263);
-            label5.Name = "label5";
-            label5.Size = new Size(150, 25);
-            label5.TabIndex = 4;
-            label5.Text = "Contact Number";
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Location = new Point(120, 322);
-            label6.Name = "label6";
-            label6.Size = new Size(45, 25);
-            label6.TabIndex = 5;
-            label6.Text = "Age";
+            label4.Text = "Email";
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(120, 378);
+            label7.Location = new Point(120, 279);
             label7.Name = "label7";
-            label7.Size = new Size(74, 25);
+            label7.Size = new Size(49, 25);
             label7.TabIndex = 6;
-            label7.Text = "Gender";
+            label7.Text = "Title";
+            label7.Click += label7_Click;
             // 
             // textBox1
             // 
@@ -135,51 +115,45 @@
             textBox4.Size = new Size(250, 31);
             textBox4.TabIndex = 10;
             // 
-            // textBox5
-            // 
-            textBox5.Location = new Point(271, 263);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(250, 31);
-            textBox5.TabIndex = 11;
-            // 
-            // textBox6
-            // 
-            textBox6.Location = new Point(271, 322);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(250, 31);
-            textBox6.TabIndex = 12;
-            // 
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(274, 383);
+            comboBox1.Items.AddRange(new object[] { "Admin", "User" });
+            comboBox1.Location = new Point(269, 279);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(139, 33);
             comboBox1.TabIndex = 13;
             // 
-            // NewAccount
+            // button1
+            // 
+            button1.Location = new Point(267, 379);
+            button1.Name = "button1";
+            button1.Size = new Size(141, 44);
+            button1.TabIndex = 14;
+            button1.Text = "Create";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // NewUser
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.InactiveCaption;
             BackgroundImageLayout = ImageLayout.Zoom;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(800, 529);
+            Controls.Add(button1);
             Controls.Add(comboBox1);
-            Controls.Add(textBox6);
-            Controls.Add(textBox5);
             Controls.Add(textBox4);
             Controls.Add(textBox3);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
             Controls.Add(label7);
-            Controls.Add(label6);
-            Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
             Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            Name = "NewAccount";
+            Name = "NewUser";
             Text = "NewUser";
             BackgroundImageLayoutChanged += NewAccount_BackgroundImageLayoutChanged;
             ResumeLayout(false);
@@ -192,15 +166,12 @@
         private Label label2;
         private Label label3;
         private Label label4;
-        private Label label5;
-        private Label label6;
         private Label label7;
         private TextBox textBox1;
         private TextBox textBox2;
         private TextBox textBox3;
         private TextBox textBox4;
-        private TextBox textBox5;
-        private TextBox textBox6;
         private ComboBox comboBox1;
+        private Button button1;
     }
 }
