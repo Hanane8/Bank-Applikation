@@ -16,8 +16,8 @@ namespace BankApplikationForm
         public C_User(string username, string password )
         : base(username, password,  null, null, null)
         {
-
+            
         }
-
+        public string test;
     }
 }
