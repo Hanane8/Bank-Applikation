@@ -58,7 +58,7 @@ namespace BankApplikationForm
 
         private void label7_Click(object sender, EventArgs e)
         {
-            // Implementation specific to your form, if any
+            
         }
     }
 

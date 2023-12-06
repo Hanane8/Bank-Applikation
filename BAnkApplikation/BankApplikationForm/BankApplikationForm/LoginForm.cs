@@ -35,7 +35,7 @@ namespace BankApplikationForm
                 string[] lines = File.ReadAllLines(filePerson);
                 foreach (string line in lines.Skip(1))
                 {
-                    string[] data = line.Split(';'); // Split by the CSV delimiter
+                    string[] data = line.Split(';'); 
                     if (data.Length >= 5) // Ensure the line contains at least the expected number of fields
                     {
                         string name = data[0].Trim();
@@ -49,7 +49,7 @@ namespace BankApplikationForm
                     }
                     else
                     {
-                        // Log or handle lines with incorrect format
+                        
                         Console.WriteLine($"Skipping line due to incorrect format: {line}");
                     }
                 }
@@ -90,7 +90,7 @@ namespace BankApplikationForm
         {
             string username = textBox1.Text;
             string password = textBox2.Text;
-            string selectedRole = comboBox1.Text.ToLower(); // Assuming the combo box has the roles
+            string selectedRole = comboBox1.Text.ToLower(); 
 
             foreach (Person user in PersonList)
             {
@@ -116,7 +116,7 @@ namespace BankApplikationForm
                         userForm.Show();
                         return;
                     }
-                    return; // Exit function since user is authenticated
+                    return; 
                 }
             }
 
