@@ -11,13 +11,20 @@ namespace BankApplikationForm
 {
     internal class C_User: Person
     {
-        private List<Account> Accounts;
-
+        private List<Account> Accounts {  get; set; }
+        private int userId {  get; set; }
         public C_User(string username, string password )
         : base(username, password,  null, null, null)
         {
             
         }
-        public string test;
+        public void GetAccountList()
+        {
+            foreach ( Account account in Accounts )
+            {
+                
+            }
+        }
+      
     }
 }

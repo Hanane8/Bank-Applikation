@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\uppgift4\\Bank-Applikation\\BAnkApplikation\\BankApplikationForm\\BankApplikationForm\\BankApplikationForm.csproj",
+      "projectUniqueName": "E:\\Bank-Applikation\\BAnkApplikation\\BankApplikationForm\\BankApplikationForm\\BankApplikationForm.csproj",
       "projectName": "BankApplikationForm",
-      "projectPath": "E:\\uppgift4\\Bank-Applikation\\BAnkApplikation\\BankApplikationForm\\BankApplikationForm\\BankApplikationForm.csproj",
+      "projectPath": "E:\\Bank-Applikation\\BAnkApplikation\\BankApplikationForm\\BankApplikationForm\\BankApplikationForm.csproj",
       "packagesPath": "C:\\Users\\Branislav\\.nuget\\packages\\",
-      "outputPath": "E:\\uppgift4\\Bank-Applikation\\BAnkApplikation\\BankApplikationForm\\BankApplikationForm\\obj\\",
+      "outputPath": "E:\\Bank-Applikation\\BAnkApplikation\\BankApplikationForm\\BankApplikationForm\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Branislav\\AppData\\Roaming\\NuGet\\NuGet.Config",
