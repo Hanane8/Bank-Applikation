@@ -16,5 +16,20 @@ namespace BankApplikationForm
         {
             InitializeComponent();
         }
+
+        private void LogOutUserBottone_Click(object sender, EventArgs e)
+        {
+            this.Close();
+
+        }
+        public void AddListToListBox()
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
