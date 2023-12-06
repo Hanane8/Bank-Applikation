@@ -12,6 +12,8 @@ namespace BankApplikationForm
 {
     public partial class Admin : Form
     {
+        private List<Person> userList;
+
         public Admin()
         {
             InitializeComponent();

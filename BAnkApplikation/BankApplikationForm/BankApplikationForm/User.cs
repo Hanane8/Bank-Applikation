@@ -12,7 +12,7 @@ namespace BankApplikationForm
 {
     public partial class User : Form
     {
-        public User()
+        public User(bool authenticatedUser)
         {
             InitializeComponent();
         }

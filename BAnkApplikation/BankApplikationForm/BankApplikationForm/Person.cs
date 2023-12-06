@@ -16,8 +16,7 @@ namespace BankApplikationForm
         public string Email { get; set; }
         public string Title { get; set; }
 
-        
-        public Person(string name, string password,  string address, string email, string title)
+        public Person(string name, string password, string address, string email, string title)
         {
             AccountId = NextAccountId++;
             Name = name;
@@ -26,6 +25,5 @@ namespace BankApplikationForm
             Email = email;
             Title = title;
         }
-
     }
 }

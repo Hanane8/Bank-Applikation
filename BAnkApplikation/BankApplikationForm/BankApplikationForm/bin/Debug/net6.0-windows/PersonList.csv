@@ -1,3 +1,10 @@
  Name; Password; Address; Email; Title 
 Sara ;1234;Kungsgatan12;Sara@gmail.com;User
 Maria;4321;Stockholm;Maria@gmail.com;Admin
+bobtest;bob123;bobtestgatan;bob2@mail.com;User
+tommy;123;tommygatan;tommy@mail.com;User
+tom;123;tomgatan1;tommail.com;User
+tom;123;tomgatan;tom@mail.com;User
+bobby;123;bobbygatan;bobby@mail.com;User
+tomas;123;tomgatan;tomas@mail.com;User
+admintest;123;admingatan;admin@mail.com;Admin

@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "SaSelmpFtYyPKnAvgA03fGXhZxA357oD0OLlGsLCyyr/8Tpt+ct2hIOtBB57n4DPBMqCrCT7GBn2Y7K64xFLAw==",
+  "dgSpecHash": "KOlzkIkADPPz7hJcchayObAK9dG1ynlRteR+eVnNbB/yRC3/36nEKKwV4WMLQe1jfIG63OWaU1qATVF7iRw8qw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Hanan\\Desktop\\Bank-Applikation\\BAnkApplikation\\BankApplikationForm\\BankApplikationForm\\BankApplikationForm.csproj",
+  "projectFilePath": "C:\\Users\\erosa\\Documents\\GitHub\\Bank-Applikation\\BAnkApplikation\\BankApplikationForm\\BankApplikationForm\\BankApplikationForm.csproj",
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\erosa\\Documents\\GitHub\\Bank-Applikation\\BAnkApplikation\\BankApplikationForm\\BankApplikationForm\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

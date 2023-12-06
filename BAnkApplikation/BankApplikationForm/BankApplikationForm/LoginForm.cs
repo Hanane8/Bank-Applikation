@@ -1,3 +1,5 @@
+using Microsoft.VisualBasic.ApplicationServices;
+
 namespace BankApplikationForm
 {
     public partial class loginForm : Form
@@ -23,7 +25,46 @@ namespace BankApplikationForm
                     MessageBox.Show($"Error creating UserList.csv: {ex.Message}");
                 }
             }
+            LoadUsersFromFile();
         }
+
+        public void LoadUsersFromFile()
+        {
+            try
+            {
+                string[] lines = File.ReadAllLines(filePerson);
+                foreach (string line in lines.Skip(1))
+                {
+                    string[] data = line.Split(';'); // Split by the CSV delimiter
+                    if (data.Length >= 5) // Ensure the line contains at least the expected number of fields
+                    {
+                        string name = data[0].Trim();
+                        string password = data[1].Trim();
+                        string address = data[2].Trim();
+                        string email = data[3].Trim();
+                        string title = data[4].Trim();
+
+                        Person user = new Person(name, password, address, email, title);
+                        PersonList.Add(user);
+                    }
+                    else
+                    {
+                        // Log or handle lines with incorrect format
+                        Console.WriteLine($"Skipping line due to incorrect format: {line}");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error reading file: {ex.Message}");
+            }
+        }
+
+
+
+
+
+
 
         private void loginForm_Load(object sender, EventArgs e)
         {
@@ -32,14 +73,56 @@ namespace BankApplikationForm
 
         private void button2_Click(object sender, EventArgs e)
         {
-            NewUser newAccount = new NewUser();
-            newAccount.Show();
+            NewUser newAccount = new NewUser(this);
+            if (newAccount.ShowDialog() == DialogResult.OK)
+            {
+                PersonList.Clear();
+                LoadUsersFromFile();
+            }
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+
         }
-       
+
+        private void logInButton_Click(object sender, EventArgs e)
+        {
+            string username = textBox1.Text;
+            string password = textBox2.Text;
+            string selectedRole = comboBox1.Text.ToLower(); // Assuming the combo box has the roles
+
+            foreach (Person user in PersonList)
+            {
+                if (user.Name == username && user.Password == password)
+                {
+                    if ((selectedRole == "admin" && user.Title.ToLower() != "admin") || (selectedRole == "user" && user.Title.ToLower() != "user"))
+                    {
+                        MessageBox.Show($"You are not a {selectedRole}. You are a {user.Title.ToLower()}.");
+                        return;
+                    }
+
+                    if (user.Title.ToLower() == "admin")
+                    {
+                        MessageBox.Show("Admin login successful!");
+                        Admin adminForm = new Admin(); 
+                        adminForm.Show();
+                        return;
+                    }
+                    else if (user.Title.ToLower() == "user")
+                    {
+                        MessageBox.Show("Regular user login successful!");
+                        User userForm = new User(true);
+                        userForm.Show();
+                        return;
+                    }
+                    return; // Exit function since user is authenticated
+                }
+            }
+
+            MessageBox.Show("Invalid username or password. Please try again.");
+        }
+
     }
+
 }

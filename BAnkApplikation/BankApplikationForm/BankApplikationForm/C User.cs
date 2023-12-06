@@ -9,15 +9,15 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace BankApplikationForm
 {
-    internal class C_User: Person
+    internal class C_User : Person
     {
         private List<Account> Accounts;
 
-        public C_User(string username, string password )
-        : base(username, password,  null, null, null)
+        public C_User(string username, string password, string address, string email, string title)
+            : base(username, password, address, email, title)
         {
-
+            Accounts = new List<Account>();
         }
-
     }
+
 }

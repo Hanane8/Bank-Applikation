@@ -17,15 +17,16 @@ namespace BankApplikationForm
         public string filePerson = "PersonList.csv";
         Person person;
         loginForm loginForm;
-        public NewUser()
+
+        public NewUser(loginForm loginform)
         {
             InitializeComponent();
-            loginForm = new loginForm();
+            loginForm = loginform;
         }
 
         private void NewAccount_BackgroundImageLayoutChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -50,20 +51,15 @@ namespace BankApplikationForm
             textBox3.Text = "";
             textBox4.Text = "";
             comboBox1.Text = "";
-
-
-
-
-
-
-
-
-
         }
+
+
+
 
         private void label7_Click(object sender, EventArgs e)
         {
-
+            // Implementation specific to your form, if any
         }
     }
+
 }
