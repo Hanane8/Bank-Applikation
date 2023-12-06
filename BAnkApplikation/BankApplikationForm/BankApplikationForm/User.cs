@@ -29,7 +29,7 @@ namespace BankApplikationForm
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textBoxOldPassword.Text == )
+            
         }
     }
 }
