@@ -46,7 +46,7 @@
             label1.AutoSize = true;
             label1.Location = new Point(120, 33);
             label1.Name = "label1";
-            label1.Size = new Size(65, 25);
+            label1.Size = new Size(54, 20);
             label1.TabIndex = 0;
             label1.Text = "Name:";
             // 
@@ -55,7 +55,7 @@
             label2.AutoSize = true;
             label2.Location = new Point(120, 85);
             label2.Name = "label2";
-            label2.Size = new Size(99, 25);
+            label2.Size = new Size(81, 20);
             label2.TabIndex = 1;
             label2.Text = "Password :";
             // 
@@ -64,7 +64,7 @@
             label3.AutoSize = true;
             label3.Location = new Point(120, 148);
             label3.Name = "label3";
-            label3.Size = new Size(79, 25);
+            label3.Size = new Size(63, 20);
             label3.TabIndex = 2;
             label3.Text = "Address";
             // 
@@ -73,7 +73,7 @@
             label4.AutoSize = true;
             label4.Location = new Point(120, 204);
             label4.Name = "label4";
-            label4.Size = new Size(56, 25);
+            label4.Size = new Size(46, 20);
             label4.TabIndex = 3;
             label4.Text = "Email";
             // 
@@ -82,37 +82,36 @@
             label7.AutoSize = true;
             label7.Location = new Point(120, 279);
             label7.Name = "label7";
-            label7.Size = new Size(49, 25);
+            label7.Size = new Size(38, 20);
             label7.TabIndex = 6;
             label7.Text = "Title";
-            label7.Click += label7_Click;
             // 
             // textBox1
             // 
             textBox1.Location = new Point(271, 33);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(250, 31);
+            textBox1.Size = new Size(250, 27);
             textBox1.TabIndex = 7;
             // 
             // textBox2
             // 
             textBox2.Location = new Point(271, 85);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(250, 31);
+            textBox2.Size = new Size(250, 27);
             textBox2.TabIndex = 8;
             // 
             // textBox3
             // 
             textBox3.Location = new Point(271, 142);
             textBox3.Name = "textBox3";
-            textBox3.Size = new Size(250, 31);
+            textBox3.Size = new Size(250, 27);
             textBox3.TabIndex = 9;
             // 
             // textBox4
             // 
             textBox4.Location = new Point(271, 204);
             textBox4.Name = "textBox4";
-            textBox4.Size = new Size(250, 31);
+            textBox4.Size = new Size(250, 27);
             textBox4.TabIndex = 10;
             // 
             // comboBox1
@@ -121,7 +120,7 @@
             comboBox1.Items.AddRange(new object[] { "Admin", "User" });
             comboBox1.Location = new Point(269, 279);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(139, 33);
+            comboBox1.Size = new Size(139, 28);
             comboBox1.TabIndex = 13;
             // 
             // button1
@@ -136,7 +135,7 @@
             // 
             // NewUser
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(9F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.InactiveCaption;
             BackgroundImageLayout = ImageLayout.Zoom;

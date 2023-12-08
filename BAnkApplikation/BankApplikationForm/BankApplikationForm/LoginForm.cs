@@ -9,14 +9,14 @@ namespace BankApplikationForm
         public loginForm()
         {
             InitializeComponent();
+
             if (!File.Exists(filePerson))
             {
                 try
                 {
-
                     using (StreamWriter sw = new StreamWriter(filePerson))
                     {
-                        sw.WriteLine(" Name; Password; Address; Email; Title ");
+                        sw.WriteLine("Name;Password;Address;Email;Title;AccountNumber");
                     }
                     MessageBox.Show("PersonList.csv created successfully.");
                 }
@@ -36,7 +36,7 @@ namespace BankApplikationForm
                 foreach (string line in lines.Skip(1))
                 {
                     string[] data = line.Split(';'); 
-                    if (data.Length >= 5) // Ensure the line contains at least the expected number of fields
+                    if (data.Length >= 5) 
                     {
                         string name = data[0].Trim();
                         string password = data[1].Trim();
@@ -60,17 +60,6 @@ namespace BankApplikationForm
             }
         }
 
-
-
-
-
-
-
-        private void loginForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
             NewUser newAccount = new NewUser(this);
@@ -79,11 +68,6 @@ namespace BankApplikationForm
                 PersonList.Clear();
                 LoadUsersFromFile();
             }
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void logInButton_Click(object sender, EventArgs e)
